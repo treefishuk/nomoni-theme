@@ -12,7 +12,14 @@ body {
             @extend .col-lg-3;
 
             > ul {
-                padding: 48px 0 0;
+
+                @extend .nav;
+                @extend .flex-column;
+
+                li {
+                    @extend .nav-item;
+                }
+
                 box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
             }
         }
