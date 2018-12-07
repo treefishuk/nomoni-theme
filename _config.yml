@@ -6,13 +6,13 @@
 
 # Title for your site
 # Default title that should be used if a page's title isn't defined
-title: Your awesome title
+title: Nomoni
 
 # Site name
-name: Site name
+name: Nomoni
 
 # Your email address
-email: bruce@wayneenterprises.com
+email: jon@treefish.uk
 
 # Description of your site. It's used for Google search results as well as your
 # site's feed.xml site description. You can see it being referenced in
@@ -38,10 +38,10 @@ image: https://location-of-image.com
 # Twitter Open Graph meta
 # Twitter handle for your site, if it has a separate handle. If not, then use
 # your personal handle
-twitter_site: "@twitter"
+twitter_site: "@treefishuk"
 
 # Your Twitter handle
-twitter_username: "@twitter"
+twitter_username: "@treefishuk"
 
 # Google Analytics
 # Remove # found before google_analytics to include Google Analytics to your
