@@ -79,8 +79,15 @@ body {
         }
     }
 
+    > footer {
+        background: #f1f1f1;
+        width: 100%;
+        padding: 1rem;
+    }
+
     > div {
         padding: 3rem;
+        width: 100%;
     }
 }
 
