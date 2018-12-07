@@ -1,13 +1,18 @@
 @import "bootstrap";
 
 body {
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     > main {
         @extend .row;
 
         > nav {
             @extend .col-lg-3;
+
+            > ul {
+            }
         }
 
         article {
@@ -19,6 +24,7 @@ body {
         @extend .navbar;
         background: #286fb7;
         top: 0;
+        left: 0;
         position: fixed;
         width: 100%;
         z-index: 1000;
@@ -31,7 +37,9 @@ body {
 
 
 
-
+img{
+    max-width: 100%;
+}
 
 
 .highlighter-rouge {
