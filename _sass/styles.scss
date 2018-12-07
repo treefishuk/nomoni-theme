@@ -1,18 +1,37 @@
 @import "bootstrap";
 
-body > header {
-    @extend .navbar;
+body {
+    padding-top: 100px;
+
+    > main {
+        @extend .container;
+
+        > nav {
+            @extend .col-lg-3;
+        }
+
+        article {
+            @extend .col-lg-9;
+        }
+    }
+
+    > header {
+        @extend .navbar;
+        background: #286fb7;
+
+        a{
+            color: #fff;
+        }
+    }
 }
 
-body > main {
-    @extend .container;
-   
 
-    > nav {
-        @extend .col-lg-3;
-    }
 
-    article {
-        @extend .col-lg-9;
-    }
+
+
+
+.highlighter-rouge {
+    background: #f8f8f8;
+    padding: 15px;
+    margin: 15px 0;
 }
