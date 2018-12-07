@@ -4,7 +4,7 @@ body {
     padding-top: 100px;
 
     > main {
-        @extend .container;
+        @extend .row;
 
         > nav {
             @extend .col-lg-3;
@@ -21,6 +21,7 @@ body {
         top: 0;
         position: fixed;
         width: 100%;
+        z-index: 1000;
 
         a {
             color: #fff;
@@ -35,6 +36,6 @@ body {
 
 .highlighter-rouge {
     background: #f8f8f8;
-    padding: 15px;
-    margin: 15px 0;
+    padding: 1rem;
+    margin: 1rem 0;
 }
