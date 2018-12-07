@@ -1,0 +1,5 @@
+﻿<nav>
+    {% for page in site.pages %}
+    <a href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+    {% endfor %}
+</nav>

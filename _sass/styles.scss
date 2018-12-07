@@ -1,15 +1,12 @@
 @import "bootstrap";
 
-body {
-    @extend .container;
-}
-
 body > header {
     @extend .navbar;
 }
 
 body > main {
-    @extend .row;
+    @extend .container;
+   
 
     > nav {
         @extend .col-lg-3;
