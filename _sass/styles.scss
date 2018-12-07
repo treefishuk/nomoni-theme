@@ -5,26 +5,14 @@ body {
 }
 
 body > header {
-    @extend .page-header;
-
-    p {
-        @extend .lead;
-    }
+    @extend .navbar;
 }
 
 body > main {
     @extend .row;
 
-    nav {
+    > nav {
         @extend .col-lg-3;
-
-        ul {
-            @extend .list-group;
-
-            li {
-                @extend .list-group-item;
-            }
-        }
     }
 
     article {
