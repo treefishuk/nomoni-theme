@@ -1,11 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets",
-    "\\_includes",
-    "\\_layouts",
-    "\\_sass"
+    "\\assets"
   ],
-  "SelectedNode": "\\_sass\\_navbar.scss",
+  "SelectedNode": "\\_config.yml",
   "PreviewInSolutionExplorer": false
 }
