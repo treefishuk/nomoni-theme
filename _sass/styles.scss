@@ -127,9 +127,9 @@ h1 {
     .card {
         @extend .col-lg-4;
         background: #f9f9f9;
-        margin: 15px;
+        margin: 0;
         padding: 1rem;
-        border: 30px solid #fff;
+        border: 15px solid #fff;
 
         h2 {
             font-size: 1.1rem;
