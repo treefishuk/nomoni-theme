@@ -82,6 +82,10 @@ body {
 
         a {
             color: #fff;
+
+            &:hover, &:active{
+               color: #efefef
+            }
         }
     }
 
