@@ -6,7 +6,7 @@ layout: default
     <h1>
         Nomoni
     </h1>
-    <i>A modular .net core MVC solution</i>
+    <i>Build modular MVC solutions, separating concerns and decoupling dependencies.</i>
 
     <a href="{{ site.project_url | escape }}">View on GitHub</a>
     <a href="{{ site.docs_url | escape }}">Read Docs</a>
@@ -39,11 +39,75 @@ layout: default
 
         <ul>
 
-            <li>List </li>
+            {% for post in site.getting-started %}
 
+            <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+
+            {% endfor %}
         </ul>
 
     </div>
+    <div class="card">
+
+        <h2>Advanced Tutorials</h2>
+
+        <ul>
+
+            {% for post in site.getting-started %}
+
+            <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+
+            {% endfor %}
+        </ul>
+
+    </div>
+
+
+</div>
+
+
+<div class="cards">
+    <div class="card">
+
+        <h2>Basic Installation</h2>
+
+        <p>
+
+
+            <div class="highlighter-rouge">
+                <div class="highlight">
+                    <pre class="highlight">
+                    <code>Install-Package Nomoni.Mvc</code>
+                    </pre>
+                </div>
+            </div>
+
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>Basic Installation</h2>
+
+        <p>
+
+
+            <div class="highlighter-rouge">
+                <div class="highlight">
+                    <pre class="highlight">
+                    <code>Install-Package Nomoni.Mvc</code>
+                    </pre>
+                </div>
+            </div>
+
+        </p>
+
+    </div>
+
+
+
 
     <div class="card">
 

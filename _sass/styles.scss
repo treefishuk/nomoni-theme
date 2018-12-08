@@ -69,6 +69,12 @@ body {
             padding: 3rem;
             width: 100%;
         }
+
+        > footer {
+            background: #f1f1f1;
+            width: 100%;
+            padding: 1rem;
+        }
     }
 
     > header {
@@ -83,16 +89,10 @@ body {
         a {
             color: #fff;
 
-            &:hover, &:active{
-               color: #efefef
+            &:hover, &:active {
+                color: #efefef
             }
         }
-    }
-
-    > footer {
-        background: #f1f1f1;
-        width: 100%;
-        padding: 1rem;
     }
 }
 
@@ -153,6 +153,14 @@ h1 {
 
     a {
         @extend .btn;
-        @extend .btn-outline-primary;
+        padding: 0.8rem 3rem;
+
+        &:first-of-type {
+            @extend .btn-outline-primary;
+        }
+
+        &:last-of-type {
+            @extend .btn-primary;
+        }
     }
 }
