@@ -39,11 +39,12 @@ layout: default
 
         <ul>
 
-            {% for doc in site.collections.getting-started %}
-
-            <li><a href="{{ doc.url | relative_url }}">{{ doc.title | escape }}</a></li>
-
+            {% for doc in site.docs %}
+                {% if doc.category == "getting-started" %}
+                <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+                {% endif %}
             {% endfor %}
+            
         </ul>
 
     </div>
@@ -51,8 +52,11 @@ layout: default
 
         <h2>Advanced Tutorials</h2>
 
-        coming soon...
-
+        {% for doc in site.docs %}
+            {% if doc.category == "advanced-tutorial" %}
+            <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+            {% endif %}
+        {% endfor %}
     </div>
 
 
