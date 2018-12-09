@@ -39,10 +39,8 @@ layout: default
 
         <ul>
 
-            {% for doc in site.docs %}
-                {% if doc.category == "getting-started" %}
+            {% for doc in site.getting-started %}
                 <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
-                {% endif %}
             {% endfor %}
             
         </ul>
@@ -52,10 +50,10 @@ layout: default
 
         <h2>Advanced Tutorials</h2>
 
-        {% for doc in site.docs %}
-            {% if doc.category == "advanced-tutorial" %}
-            <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
-            {% endif %}
+        {% for doc in site.advanced-tutorials %}
+        {% if doc.category == "advanced-tutorial" %}
+        <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+        {% endif %}
         {% endfor %}
     </div>
 
