@@ -39,9 +39,9 @@ layout: default
 
         <ul>
 
-            {% for doc in site.getting-started %}
+            {% for doc in site.collections.getting-started %}
 
-            <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+            <li><a href="{{ doc.url | relative_url }}">{{ doc.title | escape }}</a></li>
 
             {% endfor %}
         </ul>
