@@ -95,7 +95,10 @@ body {
             &:hover, &:active {
                 color: #efefef
             }
+
+
         }
+
     }
 }
 
@@ -152,10 +155,12 @@ h1 {
 
     i {
         display: block;
+        margin-bottom: 1rem;
     }
 
     a {
         @extend .btn;
+        margin-bottom: 1rem;
 
         &:first-of-type {
             @extend .btn-outline-primary;
@@ -166,7 +171,7 @@ h1 {
         }
 
         @media(min-width: 992px) {
-            padding: 0.8rem 3rem;   
+            padding: 0.8rem 3rem;
         }
     }
 }
