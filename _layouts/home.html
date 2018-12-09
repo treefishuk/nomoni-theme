@@ -51,9 +51,7 @@ layout: default
         <h2>Advanced Tutorials</h2>
 
         {% for doc in site.advanced_tutorials %}
-        {% if doc.category == "advanced-tutorial" %}
         <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
-        {% endif %}
         {% endfor %}
     </div>
 
