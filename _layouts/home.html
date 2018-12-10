@@ -36,14 +36,11 @@ layout: default
     <div class="card">
 
         <h2>Getting Started</h2>
-        
-        {% for collection in site.collections %}
-          {{ collection }}
-        {% endfor %}        
+           
         <ul>
 
-            {% for getting_started in site.getting_started %}
-            <li><a href="{{ getting_started.url }}">{{ getting_started.title }}</a></li>
+            {% for doc in site.getting_started %}
+            <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
             {% endfor %}
 
         </ul>
