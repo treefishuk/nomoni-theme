@@ -37,6 +37,10 @@ layout: default
 
         <h2>Getting Started</h2>
 
+        {% for collection in site.collections %}
+          {{ collection }}
+        {% endfor %}
+        
         <ul>
 
             {% for doc in site.getting_started %}
