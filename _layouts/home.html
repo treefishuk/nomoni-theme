@@ -37,8 +37,9 @@ layout: default
 
         <h2>Getting Started</h2>
         
-        {{ collection }}
-        
+        {% for collection in site.collections %}
+          {{ collection }}
+        {% endfor %}        
         <ul>
 
             {% for getting_started in site.getting_started %}
