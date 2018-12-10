@@ -37,9 +37,9 @@ layout: default
 
         <h2>Getting Started</h2>
 
-        {% for collection in site.collections %}
-          {{ collection }}
-        {% endfor %}
+  {% for collection in site.collections %}
+    <li><a href="{{ collection[0] }}">{{ collection[0] | capitalize }}</a></li>
+  {% endfor %}
         
         <ul>
 
