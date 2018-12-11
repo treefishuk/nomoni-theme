@@ -38,8 +38,8 @@ layout: default
         <h2>Getting Started</h2>
            
         <ul>
-
-            {% for doc in site.getting_started %}
+            {% assign docItems = site.getting_started | sort: 'order' %}
+            {% for doc in docItems %}
             <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
             {% endfor %}
 
@@ -49,11 +49,14 @@ layout: default
     <div class="card">
 
         <h2>Advanced Tutorials</h2>
-        
-        coming soon...
-        
-    </div>
+        <ul>
+            {% assign advItems = site.advanced_tutorials | sort: 'order' %}
+            {% for doc in advItems %}
+            <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+            {% endfor %}
+        </ul>
 
+    </div>
 
 </div>
 
