@@ -38,11 +38,10 @@ layout: default
         <h2>Getting Started</h2>
            
         <ul>
-            {% assign getting_started = site.getting_started | sort: 'order' %}
-            {% for doc in site.getting_started %}
+            {% assign items = site.getting_started | sort: 'order' %}
+            {% for doc in items %}
             <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
             {% endfor %}
-
         </ul>
 
     </div>
