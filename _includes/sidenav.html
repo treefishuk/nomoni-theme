@@ -1,7 +1,7 @@
 ﻿<nav>
 
-    <h3>Getting Started</h3>
     <ul>
+        <li><b>Getting Started</b></li>
         {% assign items = site.getting_started | sort: 'order' %}
         {% for doc in items %}
         <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
